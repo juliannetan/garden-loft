@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Home</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/smart-home.css">
+</head>
+<body>
+    <div class="smart-home-container">
+        <h1>Smart Home Settings</h1>
+        <div class="setting">
+            <label for="lights">Lighting</label>
+            <div class="all-buttons">
+                <div class="all-on-off">
+                    <button id="all-on" class="combined-button-left">All On</button>
+                    <button id="all-off" class="combined-button-right">All Off</button>        
+                </div>
+                <div class="light-buttons">
+                    <div class="light-button">
+                        <button id="bedroom-light" class="round-button">
+                            <text>Bedroom</text>
+                            <p id="bedroom-status" class="status-text">Off</p>
+                        </button>
+                    </div>
+                    <div class="light-button">
+                        <button id="living-room-light" class="round-button">
+                            <text>Living Room</text>
+                            <p id="living-room-status" class="status-text">Off</p>
+                        </button>
+                    </div>
+                    <div class="light-button">
+                        <button id="kitchen-light" class="round-button">
+                            <text>Kitchen</text>
+                            <p id="kitchen-status" class="status-text">Off</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="setting">
+            <label for="temperature">Temperature</label>
+            <input type="number" id="temperature" placeholder="Enter temperature">
+        </div>
+        <div class="setting">
+            <label for="blinds">Blinds</label>
+            <select id="blinds">
+                <option value="open">Open</option>
+                <option value="closed">Closed</option>
+            </select>
+        </div>
+        <button onclick="saveSmartHomeSettings()">Save Settings</button>
+    </div>
+    <script src="../assets/js/smart-home.js"></script>
+</body>
+</html>
